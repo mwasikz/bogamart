@@ -3,10 +3,10 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useNavigation } from "@react-navigation/native";
 import {
     UserIcon,
-    ChevronDownIcon,
     SearchIcon,
     AdjustmentsIcon,
-} from "react-native-heroicons/outline";
+} from "react-native-heroicons/solid";
+import { ChevronDownIcon } from "react-native-heroicons/outline"
 import Deals from '../components/Deals';
 import FeaturedRow from '../components/FeaturedRow';
 import sanityClient from '../sanity';
@@ -56,11 +56,11 @@ const HomeScreen = () => {
 
                     <Text className="font-bold text-lg">
                         Current Location
-                        <ChevronDownIcon size={20} color="#9e110bff" />
+                        <ChevronDownIcon size={20} color="#ef8700" />
                     </Text>
                 </View>
 
-                <UserIcon size={35} color="#9e110bff" />
+                <UserIcon size={30} color="#ef8700" />
 
             </View>
             {/* Search */}
@@ -72,7 +72,7 @@ const HomeScreen = () => {
                         keyboardType='default'
                     />
                 </View>
-                <AdjustmentsIcon color="#9e110bff" />
+                <AdjustmentsIcon color="#ef8700" />
             </View>
 
 

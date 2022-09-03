@@ -1,7 +1,8 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 import { urlFor } from '../sanity';
 import { useNavigation } from '@react-navigation/native';
+
 
 const ShopCard = ({
     id,
@@ -31,7 +32,7 @@ const ShopCard = ({
                     uri: urlFor(imgUrl).url(),
                 }}
 
-                className='h-16 w-20 rounded-lg'
+                className='h-12 w-16'
 
             />
             <View className='pb-1'>
