@@ -38,14 +38,20 @@ const HomeScreen = () => {
     }, [])
 
     return (
-        <SafeAreaView className="bg-[#fef2e5] pt-10" >
+        <SafeAreaView className="bg-white pt-10" >
 
             {/* Header Section */}
 
             <View className="flex-row pb-3 items-center mx-4 space-x-2">
                 <Image
                     source={require("../assets/logo.png")}
-                    className="h-12 w-12 bg-[#fef2e5] object-contain"
+                    className="bg-[#fef2e5] rounded-lg"
+                    style={{
+                        width: 50,
+                        height: 50,
+                        resizeMode: "contain"
+
+                    }}
 
                 />
 
@@ -54,7 +60,7 @@ const HomeScreen = () => {
                         Deliver Now!
                     </Text>
 
-                    <Text className="font-bold text-lg">
+                    <Text className="font-bold text-lg text-[#361c00]">
                         Current Location
                         <ChevronDownIcon size={20} color="#ef8700" />
                     </Text>
