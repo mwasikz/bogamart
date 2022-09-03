@@ -38,20 +38,19 @@ const HomeScreen = () => {
     }, [])
 
     return (
-        <SafeAreaView className="bg-white pt-10" >
+        <SafeAreaView className="bg-[#fef2e5] pt-10" >
 
             {/* Header Section */}
 
             <View className="flex-row pb-3 items-center mx-4 space-x-2">
                 <Image
-                    source={{
-                        uri: 'https://links.papareact.com/wru'
-                    }}
-                    className="h-7 w-7 bg-gray-300 p-4 rounded-full"
+                    source={require("../assets/logo.png")}
+                    className="h-12 w-12 bg-[#fef2e5] object-contain"
+
                 />
 
                 <View className="flex-1">
-                    <Text className="font-bold text-gray-400 text-xs">
+                    <Text className="font-bold text-[#361c00] text-xs">
                         Deliver Now!
                     </Text>
 
@@ -76,12 +75,15 @@ const HomeScreen = () => {
                 <AdjustmentsIcon color="#9e110bff" />
             </View>
 
+
             {/* Scrollable Body  */}
             <ScrollView
-                className="bg-gray-100"
+                className="bg-[#F7F6DC] mb-10"
                 contentContainerStyle={{
                     paddingBottom: 100,
+
                 }}
+                showsVerticalScrollIndicator={false}
             >
                 {/* Categories  */}
                 <Deals />

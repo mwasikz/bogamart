@@ -24,18 +24,18 @@ const ShopCard = ({
 
                 })
             }}
-            className='bg-white shadow-xl rounded-md mx-1'>
+            className='bg-gray-100 shadow-xl rounded-md mx-1'>
             <Image
 
                 source={{
                     uri: urlFor(imgUrl).url(),
                 }}
 
-                className='h-16 w-20 rounded-sm'
+                className='h-16 w-20 rounded-lg'
 
             />
             <View className='pb-1'>
-                <Text className='text-xs pt-1 text-gray-500 text-center'>{title}</Text>
+                <Text className='text-xs pt-1 text-[#361c00] text-center'>{title}</Text>
             </View>
         </TouchableOpacity>
     )

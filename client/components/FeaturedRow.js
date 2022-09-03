@@ -35,8 +35,8 @@ const FeaturedRow = ({ id, title, short_description }) => {
 
     return (
         <View>
-            <View className="mt-4 flex-row items-center justify-between px-5">
-                <Text className="font-bold text-lg text-gray-600">{title}</Text>
+            <View className="mt-2 flex-row items-center justify-between px-5">
+                <Text className="font-bold text-lg text-[#361c00]">{title}</Text>
 
             </View>
 

@@ -74,7 +74,7 @@ const BasketScreen = () => {
 
                             <TouchableOpacity>
                                 <Text
-                                    className="text-red-400 text-xs"
+                                    className="text-red-700 text-xs"
                                     onPress={() => dispatch(removeFromBasket({ id: key }))}
                                 >
                                     Remove
@@ -107,7 +107,7 @@ const BasketScreen = () => {
                     </View>
                     <TouchableOpacity
                         onPress={() => navigation.navigate('PreparingOrderScreen')}
-                        className="rounded-lg bg-[#9e110bff] p-2">
+                        className="rounded-lg bg-[#ef8700] p-2">
                         <Text className="text-center text-white text-lg font-bold p-1">Place Order</Text>
                     </TouchableOpacity>
                 </View>

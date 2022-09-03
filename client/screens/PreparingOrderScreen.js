@@ -33,7 +33,7 @@ const PreparingOrderScreen = () => {
             <Progress.Pie
                 size={60}
                 indeterminate={true}
-                color="#9e110bff"
+                color="#ef8700"
             />
         </SafeAreaView>
     )
