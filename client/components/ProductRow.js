@@ -39,7 +39,7 @@ const ProductRow = ({
                 <View className="flex-row">
                     <View className="flex-1 pr-2">
 
-                        <Text className="text-md font-bold mb-1">{name}</Text>
+                        <Text className="text-md font-bold mb-1 text-[#361c00]">{name}</Text>
                         <Text className="text-gray-400">{description}</Text>
                         <Text className="text-gray-400 mt-2">
                             <Currency quantity={price} currency="BDT" />
