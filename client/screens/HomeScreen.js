@@ -1,10 +1,11 @@
-import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native';
+import { View, Text, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native';
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useNavigation } from "@react-navigation/native";
 import {
     UserIcon,
     SearchIcon,
     AdjustmentsIcon,
+    ShoppingCartIcon
 } from "react-native-heroicons/solid";
 import { ChevronDownIcon } from "react-native-heroicons/outline"
 import Deals from '../components/Deals';
@@ -79,6 +80,11 @@ const HomeScreen = () => {
                         <ChevronDownIcon size={20} color="#ef8700" />
                     </Text>
                 </View>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate("Basket")}
+                >
+                    <ShoppingCartIcon size={30} color="#ef8700" />
+                </TouchableOpacity>
 
                 <UserIcon size={30} color="#ef8700" />
 

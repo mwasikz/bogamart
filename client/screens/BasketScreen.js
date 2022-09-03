@@ -30,14 +30,14 @@ const BasketScreen = () => {
     return (
         <SafeAreaView className="flex-1 bg-white">
             <View className="flex-1 bg-gray-100">
-                <View className="p-5 bg-white shadow-2xl">
+                <View className="pb-5 px-2 mt-2 bg-white shadow-2xl">
                     <View>
                         <TouchableOpacity
                             onPress={navigation.goBack}
                             className="absolute top-10 left-1 p-2 bg-gray-300 rounded-full opacity-80">
                             <ArrowLeftIcon size={20} color="#ef8700" />
                         </TouchableOpacity>
-                        <Text className="text-lg font-bold text-center mt-10">Basket</Text>
+                        <Text className="text-lg font-bold text-center mt-10 text-[#361c00]">Basket</Text>
 
                     </View>
 
@@ -94,7 +94,7 @@ const BasketScreen = () => {
                     </View>
                     <View className="flex-row justify-between">
                         <Text>Order Total</Text>
-                        <Text className="font-extrabold">
+                        <Text className="font-extrabold text-[#361c00]">
                             <Currency quantity={basketTotal + 50} currency="BDT" />
                         </Text>
                     </View>
