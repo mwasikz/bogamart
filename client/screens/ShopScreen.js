@@ -63,8 +63,10 @@ const ShopScreen = () => {
                             resizeMode: "contain"
                         }}
                     />
-                    <TouchableOpacity onPress={navigation.goBack} className="absolute top-12 left-3 p-2 bg-gray-300 rounded-full opacity-80">
-                        <ArrowLeftIcon size={20} color="#9e110bff" />
+                    <TouchableOpacity
+                        onPress={navigation.goBack}
+                        className="absolute top-12 left-3 p-2 bg-gray-300 rounded-full opacity-80">
+                        <ArrowLeftIcon size={20} color="#ef8700" />
                     </TouchableOpacity>
                 </View>
                 <View className="bg-white">

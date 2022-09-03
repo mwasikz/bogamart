@@ -32,8 +32,10 @@ const BasketScreen = () => {
             <View className="flex-1 bg-gray-100">
                 <View className="p-5 bg-white shadow-2xl">
                     <View>
-                        <TouchableOpacity onPress={navigation.goBack} className="absolute top-7 left-1 p-2 bg-gray-300 rounded-full opacity-80">
-                            <ArrowLeftIcon size={20} color="#9e110bff" />
+                        <TouchableOpacity
+                            onPress={navigation.goBack}
+                            className="absolute top-10 left-1 p-2 bg-gray-300 rounded-full opacity-80">
+                            <ArrowLeftIcon size={20} color="#ef8700" />
                         </TouchableOpacity>
                         <Text className="text-lg font-bold text-center mt-10">Basket</Text>
 
