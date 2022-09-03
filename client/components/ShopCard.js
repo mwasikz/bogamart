@@ -26,6 +26,8 @@ const ShopCard = ({
                 })
             }}
             className='bg-white shadow-2xl mx-1'>
+
+
             <Image
 
                 source={{
@@ -36,6 +38,7 @@ const ShopCard = ({
                     height: 90,
                     width: 90,
                     resizeMode: "contain",
+
 
                 }}
 

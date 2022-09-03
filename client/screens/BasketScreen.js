@@ -33,9 +33,7 @@ const BasketScreen = () => {
                 <View className="p-5 bg-white shadow-2xl">
                     <View>
                         <Text className="text-lg font-bold text-center mt-10">Basket</Text>
-                        <Text className="text-center text-gray-400">
-                            {shop.title}
-                        </Text>
+
                     </View>
                     <TouchableOpacity
                         onPress={navigation.goBack}
@@ -46,11 +44,8 @@ const BasketScreen = () => {
                 </View>
                 <View className="flex-row items-center space-x-4 px-4 py-3 my-5 bg-white">
                     <Image
-                        source={{
-                            uri: "https://links.papareact.com/wru",
-
-                        }}
-                        className="h-7 w-7 bg-gray-300 p-4 rounded-full"
+                        source={require("../assets/package.png")}
+                        className="h-10 w-10"
                     />
                     <Text className="flex-1">Deliver in 30-45 minute</Text>
                     <TouchableOpacity>
