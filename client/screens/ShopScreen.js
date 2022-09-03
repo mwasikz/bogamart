@@ -62,7 +62,7 @@ const ShopScreen = () => {
                 </View>
                 <View className="bg-white">
                     <View className='px-4 pt-4 py-2'>
-                        <Text className="text-3xl font-bold">{title}</Text>
+                        <Text className="text-3xl font-bold text-[#361c00]">{title}</Text>
 
                     </View>
                 </View>
