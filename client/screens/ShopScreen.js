@@ -48,13 +48,20 @@ const ShopScreen = () => {
     return (
         <>
             <BasketIcon />
-            <ScrollView>
+            <ScrollView
+                showsVerticalScrollIndicator={false}
+            >
                 <View className='relative'>
                     <Image
                         source={{
                             uri: urlFor(imgUrl).url()
                         }}
-                        className="w-full h-56 bg-gray-300 p-4"
+                        className="bg-white"
+                        style={{
+                            height: 200,
+                            width: 380,
+                            resizeMode: "contain"
+                        }}
                     />
                     <TouchableOpacity onPress={navigation.goBack} className="absolute top-12 left-3 p-2 bg-gray-300 rounded-full opacity-80">
                         <ArrowLeftIcon size={20} color="#9e110bff" />
