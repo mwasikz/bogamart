@@ -68,12 +68,10 @@ const BasketScreen = () => {
                             </Text>
 
                             <TouchableOpacity>
-                                <Text
-                                    className="text-red-700 text-xs"
+                                <XCircleIcon color="#9e110bff" height={30} width={30}
                                     onPress={() => dispatch(removeFromBasket({ id: key }))}
-                                >
-                                    Remove
-                                </Text>
+                                />
+
                             </TouchableOpacity>
 
                         </View>
