@@ -32,7 +32,11 @@ const ShopCard = ({
                     uri: urlFor(imgUrl).url(),
                 }}
 
-                className='h-12 w-16'
+                style={{
+                    height: 100,
+                    width: 100,
+                    resizeMode: "center",
+                }}
 
             />
             <View className='pb-1'>

@@ -35,8 +35,8 @@ const FeaturedRow = ({ id, title, short_description }) => {
 
     return (
         <View>
-            <View className="mt-2 flex-row items-center justify-between px-5">
-                <Text className="font-bold text-lg text-[#361c00]">{title}</Text>
+            <View className="flex-row items-center justify-between px-5 bg-gray-100">
+                <Text className="font-bold text-sm text-[#361c00]">{title}</Text>
 
             </View>
 
@@ -44,9 +44,11 @@ const FeaturedRow = ({ id, title, short_description }) => {
                 horizontal
                 contentContainerStyle={{
                     paddingHorizontal: 10,
+                    paddingBottom: 10,
+                    paddingTop: 10,
                 }}
                 showsHorizontalScrollIndicator={false}
-                className="pt-1"
+                className="bg-gray-100"
             >
                 {/* Shop Cards */}
 
