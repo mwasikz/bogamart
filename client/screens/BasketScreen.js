@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux';
 import { selectShop } from '../features/shopSlice';
 import { removeFromBasket, selectBasketItems, selectBasketTotal } from '../features/basketSlice';
-import { XCircleIcon } from 'react-native-heroicons/solid';
+import { ArrowLeftIcon, XCircleIcon } from 'react-native-heroicons/solid';
 import { urlFor } from '../sanity';
 import Currency from "react-currency-formatter";
 import PreparingOrderScreen from './PreparingOrderScreen';
@@ -32,15 +32,13 @@ const BasketScreen = () => {
             <View className="flex-1 bg-gray-100">
                 <View className="p-5 bg-white shadow-2xl">
                     <View>
+                        <TouchableOpacity onPress={navigation.goBack} className="absolute top-7 left-1 p-2 bg-gray-300 rounded-full opacity-80">
+                            <ArrowLeftIcon size={20} color="#9e110bff" />
+                        </TouchableOpacity>
                         <Text className="text-lg font-bold text-center mt-10">Basket</Text>
 
                     </View>
-                    <TouchableOpacity
-                        onPress={navigation.goBack}
-                        className="rounded-full bg-white absolute top-10 right-5"
-                    >
-                        <XCircleIcon color="#9e110bff" height={50} width={50} />
-                    </TouchableOpacity>
+
                 </View>
                 <View className="flex-row items-center space-x-4 px-4 py-3 my-5 bg-white">
                     <Image
