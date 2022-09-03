@@ -25,7 +25,7 @@ const ShopCard = ({
 
                 })
             }}
-            className='bg-white shadow-xl mx-1'>
+            className='bg-white shadow-2xl mx-1'>
             <Image
 
                 source={{
