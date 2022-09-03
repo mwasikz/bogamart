@@ -26,9 +26,11 @@ const Deals = () => {
             contentContainerStyle={{
                 paddingHorizontal: 15,
                 paddingTop: 10,
+                marginBottom: 10,
             }}
             horizontal
             showsHorizontalScrollIndicator={false}
+            className="bg-[#F1F1F1]"
         >
 
             {/* Deals Card */}
