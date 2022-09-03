@@ -49,7 +49,7 @@ const BasketScreen = () => {
                     />
                     <Text className="flex-1">Deliver in 30-45 minute</Text>
                     <TouchableOpacity>
-                        <Text className="text-orange-400">Change</Text>
+                        <Text className="text-[#319206]">Change</Text>
                     </TouchableOpacity>
                 </View>
                 <ScrollView className="divide-y divide-gray-200">
