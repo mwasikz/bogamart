@@ -78,7 +78,7 @@ const HomeScreen = () => {
 
             {/* Scrollable Body  */}
             <ScrollView
-                className="bg-[#F7F6DC] mb-10"
+                className="bg-white mb-10"
                 contentContainerStyle={{
                     paddingBottom: 100,
 

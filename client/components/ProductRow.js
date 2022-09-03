@@ -67,7 +67,7 @@ const ProductRow = ({
                             onPress={removeItemFromBasket}
                         >
                             <MinusCircleIcon
-                                color={items.length > 0 ? "#9e110bff" : "gray"}
+                                color={items.length > 0 ? "#ef8700" : "gray"}
                                 size={40}
                             />
                         </TouchableOpacity>
@@ -75,7 +75,7 @@ const ProductRow = ({
                         <TouchableOpacity onPress={addItemToBasket}>
                             <PlusCircleIcon
 
-                                color="#9e110bff"
+                                color="#ef8700"
                                 size={40}
                             />
                         </TouchableOpacity>
