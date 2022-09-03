@@ -15,5 +15,11 @@ export default {
       type: 'image',
       title: 'Image of category',
     },
+    {
+      name: "products",
+      type: "array",
+      title: "Products",
+      of: [{ type: "reference", to: [{ type: "product" }] }],
+    },
   ],
 }

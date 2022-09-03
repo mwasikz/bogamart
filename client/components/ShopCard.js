@@ -36,6 +36,7 @@ const ShopCard = ({
                     height: 90,
                     width: 90,
                     resizeMode: "contain",
+
                 }}
 
             />

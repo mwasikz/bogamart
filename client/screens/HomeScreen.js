@@ -17,6 +17,7 @@ const HomeScreen = () => {
 
     const navigation = useNavigation();
     const [featuredCategories, setFeaturedCategories] = useState([])
+    const [featuredDeals, setFeaturedDeals] = useState([])
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -34,6 +35,19 @@ const HomeScreen = () => {
             }
         }`).then(data => {
             setFeaturedCategories(data)
+        })
+    }, [])
+
+    useEffect(() => {
+        sanityClient.fetch(`
+        *[_type == "deals"] {
+            ...,
+            products[]->{
+              ...,
+            }
+
+        }`).then(data2 => {
+            setFeaturedDeals(data2)
         })
     }, [])
 
@@ -91,8 +105,12 @@ const HomeScreen = () => {
                 }}
                 showsVerticalScrollIndicator={false}
             >
-                {/* Categories  */}
+                {/* Deals  */}
+
                 <Deals />
+
+
+
                 {/* Featured */}
 
                 {featuredCategories?.map(shop => (
