@@ -14,7 +14,7 @@ const DeliveryScreen = () => {
 
 
     return (
-        <View className="bg-[#9e110bff] flex-1">
+        <View className="bg-[#ef8700] flex-1">
             <SafeAreaView className="z-50">
                 <View className="flex-row justify-between items-center p-5 mt-5">
                     <TouchableOpacity
@@ -36,7 +36,7 @@ const DeliveryScreen = () => {
                             className="h-20 w-24"
                         />
                     </View>
-                    <Progress.Bar size={30} color="#9e110bff" indeterminate={true} />
+                    <Progress.Bar size={30} color="#ef8700" indeterminate={true} />
                     <Text className="mt-3 text gray-500">
                         Your order is being prepared
                     </Text>
@@ -68,9 +68,7 @@ const DeliveryScreen = () => {
 
             <SafeAreaView className="bg-white flex-row items-center space-x-5 h-28">
                 <Image
-                    source={{
-                        uri: "https://links.papareact.com/wru"
-                    }}
+                    source={require("../assets/delivery-man.png")}
 
                     className="h-12 w-12 bg-gray-300 p-4 rounded-full ml-5"
                 />
@@ -82,8 +80,8 @@ const DeliveryScreen = () => {
 
                 <View className="flex-row">
                     <TouchableOpacity>
-                        <PhoneIcon size={22} color="#9e110bff" />
-                        <Text className="text-[#9e110bff] text-lg mr-5 font-light">Call</Text>
+                        <PhoneIcon size={22} color="#ef8700" />
+                        <Text className="text-[#ef8700] text-lg mr-5 font-light">Call</Text>
                     </TouchableOpacity>
                 </View>
 
