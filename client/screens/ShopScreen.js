@@ -67,7 +67,7 @@ const ShopScreen = () => {
                     </View>
                 </View>
                 <View className="pb-36">
-                    <Text className="px-4 pt-4 mb-3 font-bold text-xl">
+                    <Text className="px-4 pt-4 mb-3 font-bold text-xl text-[#361c00]">
                         All Products
                     </Text>
                     {/* Products */}
