@@ -56,10 +56,10 @@ const HomeScreen = () => {
 
             {/* Header Section */}
 
-            <View className="flex-row pb-3 items-center mx-4 space-x-2">
+            <View className="flex-row pb-3 items-center mx-4 space-x-4">
                 <Image
                     source={require("../assets/logo.png")}
-                    className="bg-[#fef2e5] rounded-lg"
+                    className="rounded-lg"
                     style={{
                         width: 50,
                         height: 50,
