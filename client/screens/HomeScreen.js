@@ -65,7 +65,7 @@ const HomeScreen = () => {
 
     return (
 
-        <SafeAreaView className="bg-white pt-10">
+        <SafeAreaView className="bg-[#fef2e5] pt-10">
 
             {/* Header Section */}
 
@@ -74,8 +74,8 @@ const HomeScreen = () => {
                     source={require("../assets/logo.png")}
                     className="rounded-lg"
                     style={{
-                        width: 50,
-                        height: 50,
+                        width: 40,
+                        height: 40,
                         resizeMode: "contain"
 
                     }}
@@ -93,6 +93,7 @@ const HomeScreen = () => {
                     </Text>
                 </View>
                 <TouchableOpacity
+
                     onPress={() => navigation.navigate("Basket")}
                 >
                     <ShoppingCartIcon size={30} color="#ef8700" />
