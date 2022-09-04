@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TouchableOpacity, Image, ScrollView } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity, Image, ScrollView, Platform } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,6 +10,30 @@ import Currency from "react-currency-formatter";
 import PreparingOrderScreen from './PreparingOrderScreen';
 
 const BasketScreen = () => {
+
+    const styles = {
+        viewClass: {
+
+            ...Platform.select({
+                ios: {
+                    shadowColor: '#000',
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.2,
+                    backgroundColor: 'white'
+                },
+                android: {
+                    shadowColor: 'black',
+                    shadowOpacity: 0.26,
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowRadius: 5,
+                    elevation: 10,
+
+
+                },
+            }),
+        }
+    };
+
     const navigation = useNavigation();
     const shop = useSelector(selectShop);
     const products = useSelector(selectBasketItems);
@@ -30,14 +54,14 @@ const BasketScreen = () => {
     return (
         <SafeAreaView className="flex-1 bg-white">
             <View className="flex-1 bg-gray-100">
-                <View className="pb-10 px-2 mt-2 bg-white shadow-2xl">
+                <View className="pb-10 px-2 mt-2 bg-white" style={styles.viewClass}>
                     <View>
                         <TouchableOpacity
                             onPress={navigation.goBack}
                             className="absolute top-10 left-1 p-5 bg-white rounded-full opacity-80">
                             <ArrowLeftIcon size={20} color="#ef8700" />
                         </TouchableOpacity>
-                        <Text className="text-lg font-bold text-center mt-10 text-[#361c00]">Basket</Text>
+                        <Text className="text-xl font-medium text-center mt-10 text-[#361c00]">Basket</Text>
 
                     </View>
 
@@ -101,7 +125,7 @@ const BasketScreen = () => {
                     </View>
                     <TouchableOpacity
                         onPress={() => navigation.navigate('PreparingOrderScreen')}
-                        className="rounded-lg bg-[#ef8700] p-2">
+                        className="rounded-lg bg-[#ef8700] p-2" style={styles.viewClass}>
                         <Text className="text-center text-white text-lg font-bold p-1">Place Order</Text>
                     </TouchableOpacity>
                 </View>

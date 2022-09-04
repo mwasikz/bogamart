@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity, Platform } from 'react-native';
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useNavigation } from "@react-navigation/native";
 import {
@@ -18,7 +18,30 @@ const HomeScreen = () => {
 
     const navigation = useNavigation();
     const [featuredCategories, setFeaturedCategories] = useState([])
-    const [featuredDeals, setFeaturedDeals] = useState([])
+    const [featuredDeals, setFeaturedDeals] = useState([]);
+
+    const styles = {
+        viewClass: {
+
+            ...Platform.select({
+                ios: {
+                    shadowColor: '#000',
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.2,
+                    backgroundColor: 'white'
+                },
+                android: {
+                    shadowColor: 'black',
+                    shadowOpacity: 0.26,
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowRadius: 10,
+                    elevation: 5,
+
+
+                },
+            }),
+        }
+    };
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -41,7 +64,8 @@ const HomeScreen = () => {
 
 
     return (
-        <SafeAreaView className="bg-white pt-10 shadow-2xl" >
+
+        <SafeAreaView className="bg-white pt-10">
 
             {/* Header Section */}
 
@@ -78,8 +102,8 @@ const HomeScreen = () => {
 
             </View>
             {/* Search */}
-            <View className='flex-row items-center space-x-2 pb-4 mx-4 shadow-2xl'>
-                <View className='flex-row flex-1 space-x-2 bg-[#F1F1F1] p-2 rounded-lg'>
+            <View className='flex-row items-center space-x-2 pb-4 mx-4' >
+                <View className='flex-row flex-1 space-x-2 bg-slate-100 p-2 rounded-lg' style={styles.viewClass} >
                     <SearchIcon color='gray' size={20} />
                     <TextInput
                         placeholder='Search'

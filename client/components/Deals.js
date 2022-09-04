@@ -1,10 +1,11 @@
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, Platform } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import DealsCard from './DealsCard'
 import sanityClient, { urlFor } from '../sanity';
 
 const Deals = () => {
     const [deals, setDeals] = useState([]);
+
 
     useEffect(() => {
         sanityClient
@@ -30,7 +31,8 @@ const Deals = () => {
             }}
             horizontal
             showsHorizontalScrollIndicator={false}
-            className="bg-[#F1F1F1]"
+            className="bg-slate-100"
+
         >
 
             {/* Deals Card */}

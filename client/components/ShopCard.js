@@ -1,47 +1,29 @@
-import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet, Platform } from 'react-native';
 import React from 'react';
 import { urlFor } from '../sanity';
 import { useNavigation } from '@react-navigation/native';
+import CardView from 'react-native-cardview';
 
-const styles = StyleSheet.create({
-    heading: {
-        fontSize: 18,
-        fontWeight: '600',
-        marginBottom: 13,
-    },
-    card: {
-        backgroundColor: 'white',
-        borderRadius: 8,
-        margin: 4,
+const styles = {
+    viewClass: {
 
-    },
-    elevation: {
-        elevation: 30,
-        shadowColor: '#52006A',
-    },
-});
+        ...Platform.select({
+            ios: {
+                shadowColor: '#000',
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.2,
+                backgroundColor: 'white'
+            },
+            android: {
+                shadowColor: 'black',
+                shadowOpacity: 0.26,
+                shadowOffset: { width: 0, height: 2 },
+                shadowRadius: 5,
+                elevation: 5,
 
-const generateBoxShadowStyle = (
-    xOffset,
-    yOffset,
-    shadowColorIos,
-    shadowOpacity,
-    shadowRadius,
-    elevation,
-    shadowColorAndroid,
-) => {
-    if (Platform.OS === 'ios') {
-        styles.boxShadow = {
-            shadowColor: shadowColorIos,
-            shadowOffset: { width: xOffset, height: yOffset },
-            shadowOpacity,
-            shadowRadius,
-        };
-    } else if (Platform.OS === 'android') {
-        styles.boxShadow = {
-            elevation,
-            shadowColor: shadowColorAndroid,
-        };
+
+            },
+        }),
     }
 };
 
@@ -56,43 +38,48 @@ const ShopCard = ({
     const navigation = useNavigation();
 
     return (
-        <View style={[styles.card, styles.boxShadow]}>
-            <TouchableOpacity
 
-                onPress={() => {
-                    navigation.navigate("Shop", {
-                        id,
-                        imgUrl,
-                        title,
-                        products,
 
-                    })
+        <TouchableOpacity
+            style={styles.viewClass}
+            onPress={() => {
+                navigation.navigate("Shop", {
+                    id,
+                    imgUrl,
+                    title,
+                    products,
+
+                })
+            }}
+            className='bg-white ml-2 rounded-md'>
+
+
+
+            <Image
+
+                source={{
+                    uri: urlFor(imgUrl).url(),
                 }}
-                className='bg-white shadow-2xl rounded-md'>
+
+                style={{
+                    height: 90,
+                    width: 90,
+                    resizeMode: "contain",
+                    borderRadius: 20,
 
 
-                <Image
+                }
 
-                    source={{
-                        uri: urlFor(imgUrl).url(),
-                    }}
+                }
 
-                    style={{
-                        height: 90,
-                        width: 90,
-                        resizeMode: "contain",
-                        borderRadius: 20,
+            />
+            <View className='pb-1'>
+                <Text className='text-xs pt-1 text-[#361c00] text-center'>{title}</Text>
+            </View>
+
+        </TouchableOpacity>
 
 
-                    }}
-
-                />
-                <View className='pb-1'>
-                    <Text className='text-xs pt-1 text-[#361c00] text-center'>{title}</Text>
-                </View>
-
-            </TouchableOpacity>
-        </View>
     )
 }
 

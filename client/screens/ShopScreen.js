@@ -1,12 +1,10 @@
-import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, Image, TouchableOpacity, Platform } from 'react-native'
 import React, { useEffect, useLayoutEffect } from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { urlFor } from '../sanity';
 import {
     ArrowLeftIcon,
-    ChevronRightIcon,
-    LocationMarkerIcon,
-    StarIcon,
+
 } from "react-native-heroicons/solid";
 import { QuestionMarkCircleIcon } from "react-native-heroicons/outline";
 import ProductRow from '../components/ProductRow';
@@ -18,6 +16,29 @@ const ShopScreen = () => {
 
     const navigation = useNavigation();
     const dispatch = useDispatch();
+
+    const styles = {
+        viewClass: {
+
+            ...Platform.select({
+                ios: {
+                    shadowColor: '#000',
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.2,
+                    backgroundColor: 'white'
+                },
+                android: {
+                    shadowColor: 'black',
+                    shadowOpacity: 0.26,
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowRadius: 10,
+                    elevation: 3,
+
+
+                },
+            }),
+        }
+    };
 
     const { params: {
         id,
@@ -69,7 +90,7 @@ const ShopScreen = () => {
                         <ArrowLeftIcon size={20} color="#ef8700" />
                     </TouchableOpacity>
                 </View>
-                <View className="bg-white">
+                <View className="bg-white" style={styles.viewClass}>
                     <View className='px-4 pt-4 py-2'>
                         <Text className="text-3xl font-bold text-[#361c00]">{title}</Text>
 

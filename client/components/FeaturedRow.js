@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Platform } from "react-native";
 import React, { useEffect, useState } from "react";
 import { ArrowRightIcon } from "react-native-heroicons/outline";
 import ShopCard from "./ShopCard";
@@ -6,6 +6,29 @@ import sanityClient from "../sanity";
 
 const FeaturedRow = ({ id, title, short_description }) => {
     const [shops, setShops] = useState([]);
+
+    const styles = {
+        viewClass: {
+
+            ...Platform.select({
+                ios: {
+                    shadowColor: '#000',
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.2,
+                    backgroundColor: 'white'
+                },
+                android: {
+                    shadowColor: 'black',
+                    shadowOpacity: 0.26,
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowRadius: 10,
+                    elevation: 3,
+
+
+                },
+            }),
+        }
+    };
 
     useEffect(() => {
         sanityClient
@@ -34,8 +57,8 @@ const FeaturedRow = ({ id, title, short_description }) => {
     }, [id]);
 
     return (
-        <View>
-            <View className="flex-row items-center justify-between px-5 bg-[#F1F1F1]">
+        <View >
+            <View className="flex-row items-center justify-between px-5 bg-slate-100">
                 <Text className="font-bold text-sm text-[#361c00] ">{title}</Text>
 
             </View>
@@ -48,7 +71,8 @@ const FeaturedRow = ({ id, title, short_description }) => {
                     paddingTop: 10,
                 }}
                 showsHorizontalScrollIndicator={false}
-                className="bg-[#F1F1F1]"
+                className="bg-slate-100"
+
             >
                 {/* Shop Cards */}
 
