@@ -3,7 +3,7 @@ import React from 'react'
 
 const DealsCard = ({ imgUrl, title }) => {
     return (
-        <TouchableOpacity className='relative mr-2'>
+        <TouchableOpacity className='relative mr-2 pt-2 shadow-2xl'>
             <Image source={{
                 uri: imgUrl
             }}
