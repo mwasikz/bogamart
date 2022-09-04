@@ -29,7 +29,7 @@ const ProductRow = ({
                     shadowOpacity: 0.26,
                     shadowOffset: { width: 0, height: 2 },
                     shadowRadius: 5,
-                    elevation: 20,
+                    elevation: 5,
 
 
                 },
@@ -58,7 +58,7 @@ const ProductRow = ({
         <>
             <TouchableOpacity
                 onPress={() => setIsPressed(!isPressed)}
-                className={`bg-white border p-4 border-gray-200 ${isPressed && "border-b-0"}`}>
+                className={`bg-white border p-4 border-gray-200 ${isPressed && "border-b-0"}`} style={styles.viewClass} >
                 <View className="flex-row">
                     <View className="flex-1 pr-2">
 

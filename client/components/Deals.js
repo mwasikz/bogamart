@@ -31,7 +31,7 @@ const Deals = () => {
             }}
             horizontal
             showsHorizontalScrollIndicator={false}
-            className="bg-slate-100"
+            className="bg-slate-200"
 
         >
 

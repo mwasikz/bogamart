@@ -32,7 +32,7 @@ const DealsCard = ({ imgUrl, title }) => {
             <Image source={{
                 uri: imgUrl
             }}
-                className='h-28 w-40 rounded'
+                className='h-28 w-40 rounded-lg'
                 style={{ resizeMode: 'contain' }}
             />
         </TouchableOpacity>
