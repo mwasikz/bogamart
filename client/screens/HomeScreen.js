@@ -39,18 +39,6 @@ const HomeScreen = () => {
         })
     }, [])
 
-    useEffect(() => {
-        sanityClient.fetch(`
-        *[_type == "deals"] {
-            ...,
-            products[]->{
-              ...,
-            }
-
-        }`).then(data2 => {
-            setFeaturedDeals(data2)
-        })
-    }, [])
 
     return (
         <SafeAreaView className="bg-white pt-10" >
@@ -75,7 +63,7 @@ const HomeScreen = () => {
                         Deliver Now!
                     </Text>
 
-                    <Text className="font-bold text-lg text-[#361c00]">
+                    <Text className="text-lg text-[#361c00]">
                         Current Location
                         <ChevronDownIcon size={20} color="#ef8700" />
                     </Text>

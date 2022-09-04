@@ -25,7 +25,7 @@ const ShopCard = ({
 
                 })
             }}
-            className='bg-white shadow-2xl mx-1'>
+            className='bg-white shadow-2xl mx-1 rounded-md'>
 
 
             <Image
@@ -38,6 +38,7 @@ const ShopCard = ({
                     height: 90,
                     width: 90,
                     resizeMode: "contain",
+                    borderRadius: 20,
 
 
                 }}
