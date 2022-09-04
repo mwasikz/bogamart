@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Image, Platform } from 'react-native';
 import React, { useState } from 'react';
 import Currency from 'react-currency-formatter';
 import { urlFor } from '../sanity';
@@ -13,6 +13,29 @@ const ProductRow = ({
     price,
     image
 }) => {
+
+    const styles = {
+        viewClass: {
+
+            ...Platform.select({
+                ios: {
+                    shadowColor: '#000',
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.2,
+                    backgroundColor: 'white'
+                },
+                android: {
+                    shadowColor: 'black',
+                    shadowOpacity: 0.26,
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowRadius: 5,
+                    elevation: 20,
+
+
+                },
+            }),
+        }
+    };
 
     const [isPressed, setIsPressed] = useState(false);
     const items = useSelector((state) => selectBasketItemsWithId(state, id));
@@ -49,11 +72,12 @@ const ProductRow = ({
                     <View>
                         <Image
                             style={{
-                                borderWidth: 1,
-                                borderColor: "#F3F3F4",
+
+                                resizeMode: "contain",
+
                             }}
                             source={{ uri: urlFor(image).url() }}
-                            className="h-20 w-20 bg-gray-300 p-4 rounded-full"
+                            className="h-20 w-20 bg-gray-300"
                         />
                     </View>
                 </View>

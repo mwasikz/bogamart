@@ -47,7 +47,7 @@ const BasketIcon = () => {
                     View Basket
                 </Text>
                 <Text className="text-lg text-white font-extrabold">
-                    <Currency quantity={basketTotal} Currency="BDT" />
+                    <Currency quantity={basketTotal} currency="BDT" />
                 </Text>
             </TouchableOpacity>
         </View>
