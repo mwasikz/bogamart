@@ -32,8 +32,12 @@ const DeliveryScreen = () => {
                             <Text className="text-2xl font-bold">30-45 Minutes</Text>
                         </View>
                         <Image
-                            source={require("../assets/bikeRider.gif")}
-                            className="h-20 w-24"
+                            source={require("../assets/deliveryTruck.png")}
+                            style={{
+                                height: 64,
+                                width: 64,
+                                marginTop: 10,
+                            }}
                         />
                     </View>
                     <Progress.Bar size={30} color="#ef8700" indeterminate={true} />

@@ -30,7 +30,7 @@ const PreparingOrderScreen = () => {
             >
                 Please wait while your order is being processed
             </Animatable.Text>
-            <Progress.Pie
+            <Progress.Circle
                 size={60}
                 indeterminate={true}
                 color="#ef8700"
