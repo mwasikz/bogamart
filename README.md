@@ -16,3 +16,6 @@ BogaMart is a Grocery Shopping App for both Android and iOS.
 - Cart popup after items are selected.
 - Remove items from the basket.
 - Local map indicating location. 
+
+## 🟧How to Run
+- Clone this repository by `#ffffff git clone https://github.com/mwasikz/bogamart.git `
