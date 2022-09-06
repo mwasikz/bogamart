@@ -2,6 +2,12 @@
 BogaMart is a Grocery Shopping App for both Android and iOS. 
 #### :orange_square: Screens
 
+<p float="left">
+  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Loading_Screen.png" width="600"> 
+  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Home_Screen.png" width="600">
+</p>
+
+
 Loading Screen             |  Home Screen
 :-------------------------:|:-------------------------:
 <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Loading_Screen.png" width="600">  |  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Home_Screen.png" width="600">
