@@ -17,7 +17,9 @@ Basket Screen             |  Delivery Screen
 #### :orange_circle: Tech Stack
 
 <p align="center">
+  <a href="https://reactnative.dev/">
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/React_Native.png" width="100" />
+  </a>
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Expo_Logo.png" width="100" /> 
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Sanity_R.png" width="100" />
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Redux.png" width="100" />
