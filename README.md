@@ -14,6 +14,10 @@ Basket Screen             |  Delivery Screen
 :-------------------------:|:-------------------------:
 <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Basket_Screen.png" width="600">| <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Delivery_Screen.png" width="600">
 
+#### :orange_circle: Tech Stack
+
+[![Expo](https://camo.githubusercontent.com/a5f734e77a4e810c744f32bdb8d093e9f9ec5f2508f2f487930bf80ee47bd42f/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f376c2d62514144525634507a78417a5f39474832616f7a56336a6b4871646c554a624f7349663445755f62617a43693655485f55796941654b6572322d733947616649)](https://expo.dev/)
+
 #### :orange_circle: Features
 - View featured and popular items.
 - View items by category.
