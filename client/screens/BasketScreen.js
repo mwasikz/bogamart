@@ -54,7 +54,7 @@ const BasketScreen = () => {
     return (
         <SafeAreaView className="flex-1 bg-white">
             <View className="flex-1 bg-gray-100">
-                <View className="pb-10 px-2 mt-2 bg-white" style={styles.viewClass}>
+                <View className="pb-10 px-2 bg-white" style={styles.viewClass}>
                     <View>
                         <TouchableOpacity
                             onPress={navigation.goBack}
