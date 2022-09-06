@@ -1,6 +1,5 @@
 ### :orange_square: BogaMart
 BogaMart is a Grocery Shopping App for both Android and iOS. 
-
 #### :orange_square: Screens
 ![Loading Screen](https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Loading_Screen.png "Loading Screen")
 ![Home Screen](https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Home_Screen.png "Home Screen")
@@ -17,7 +16,7 @@ BogaMart is a Grocery Shopping App for both Android and iOS.
 - Remove items from the basket.
 - Local map indicating location. 
 
-#### 🟧How to Run
+#### 🟧 How to Run
 - Clone this repository by `git clone https://github.com/mwasikz/bogamart.git `
 - Change directory by `cd client`
 - Make sure you have expo-cli installed. If not run `npm install -g expo-cli`
