@@ -1,4 +1,4 @@
-### :orange_circle: BogaMart
+## BogaMart
 BogaMart is a Grocery Shopping App for both Android and iOS. 
 #### :orange_circle: Screens
 
