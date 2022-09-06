@@ -2,12 +2,6 @@
 BogaMart is a Grocery Shopping App for both Android and iOS. 
 #### :orange_square: Screens
 
-<p float="left">
-  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Loading_Screen.png" width="600"> 
-  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Home_Screen.png" width="600">
-</p>
-
-
 Loading Screen             |  Home Screen
 :-------------------------:|:-------------------------:
 <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Loading_Screen.png" width="600">  |  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Home_Screen.png" width="600">
@@ -16,10 +10,9 @@ Shop Screen             |  Product Select Screen
 :-------------------------:|:-------------------------:
 <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Shop_Screen.png" width="600"> | <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Product_Select_Screen.png" width="600">
 
-
-
-<img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Basket_Screen.png" width="600">
-<img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Delivery_Screen.png" width="600">
+Basket Screen             |  Delivery Screen
+:-------------------------:|:-------------------------:
+<img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Basket_Screen.png" width="600">| <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Delivery_Screen.png" width="600">
 
 #### :orange_square: Features
 - View featured and popular items.
