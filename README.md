@@ -18,4 +18,4 @@ BogaMart is a Grocery Shopping App for both Android and iOS.
 - Local map indicating location. 
 
 ## 🟧How to Run
-- Clone this repository by `#ffffff git clone https://github.com/mwasikz/bogamart.git `
+- Clone this repository by `git clone https://github.com/mwasikz/bogamart.git `
