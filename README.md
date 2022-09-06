@@ -19,3 +19,10 @@ BogaMart is a Grocery Shopping App for both Android and iOS.
 
 ## 🟧How to Run
 - Clone this repository by `git clone https://github.com/mwasikz/bogamart.git `
+- Change directory by `cd client`
+- Make sure you have expo-cli installed. If not run `npm install -g expo-cli`
+- Install the dependencies using `yarn install`
+- Run `expo start`
+- Open another terminal and change directory to server folder by `cd ../server/sanity`
+- Install the dependencies again using `npm install`
+- Start Sanity server by `sanity start`
