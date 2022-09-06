@@ -23,11 +23,14 @@ Basket Screen             |  Delivery Screen
   <a href="https://expo.dev/">
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Expo_Logo.png" width="100" /> 
   </a>
-  <a href="https://www.sanity.io/">
-  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Sanity_R.png" width="100" />
+  <a href="https://tailwindcss.com/">
+  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Tailwind.png" width="100" />
   </a>
   <a href="https://redux.js.org/">
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Redux.png" width="100" />
+  </a>
+  <a href="https://www.sanity.io/">
+  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Sanity_R.png" width="100" />
   </a>
 </p>
 
