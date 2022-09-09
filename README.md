@@ -41,7 +41,7 @@ Basket Screen             |  Delivery Screen
 - Select/Deselect items from the shop.
 - Cart popup after items are selected.
 - Remove items from the basket.
-- Local map indicating location. 
+- Map functionality using the <a href="https://github.com/react-native-maps/react-native-maps">React Native Map components for iOS + Android</a>
 
 #### :orange_circle: How to Run
 - Clone this repository by `git clone https://github.com/mwasikz/bogamart.git `
