@@ -23,11 +23,14 @@ Basket Screen             |  Delivery Screen
   <a href="https://expo.dev/">
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Expo_Logo.png" width="100" /> 
   </a>
-  <a href="https://www.sanity.io/">
-  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Sanity_R.png" width="100" />
+  <a href="https://tailwindcss.com/">
+  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Tailwind.png" width="100" />
   </a>
   <a href="https://redux.js.org/">
   <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Redux.png" width="100" />
+  </a>
+  <a href="https://www.sanity.io/">
+  <img src="https://github.com/mwasikz/bogamart/blob/main/ScreenShots/Sanity_R.png" width="100" />
   </a>
 </p>
 
@@ -38,7 +41,7 @@ Basket Screen             |  Delivery Screen
 - Select/Deselect items from the shop.
 - Cart popup after items are selected.
 - Remove items from the basket.
-- Local map indicating location. 
+- Map functionality using the <a href="https://github.com/react-native-maps/react-native-maps">React Native Map components for iOS + Android</a>
 
 #### :orange_circle: How to Run
 - Clone this repository by `git clone https://github.com/mwasikz/bogamart.git `
