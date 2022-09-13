@@ -74,8 +74,8 @@ const HomeScreen = () => {
                     source={require("../assets/logo.png")}
                     className="rounded-lg"
                     style={{
-                        width: 40,
-                        height: 40,
+                        width: 42,
+                        height: 42,
                         resizeMode: "contain"
 
                     }}

@@ -67,10 +67,8 @@ const ShopCard = ({
                     resizeMode: "contain",
                     borderRadius: 20,
 
+                }}
 
-                }
-
-                }
 
             />
             <View className='pb-1'>
