@@ -27,8 +27,6 @@ const BasketScreen = () => {
                     shadowOffset: { width: 0, height: 2 },
                     shadowRadius: 5,
                     elevation: 10,
-
-
                 },
             }),
         }
@@ -96,9 +94,7 @@ const BasketScreen = () => {
                                 <XCircleIcon color="#9e110bff" height={30} width={30}
                                     onPress={() => dispatch(removeFromBasket({ id: key }))}
                                 />
-
                             </TouchableOpacity>
-
                         </View>
                     ))}
                 </ScrollView>
