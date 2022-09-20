@@ -11,8 +11,6 @@ import { PhoneIcon } from 'react-native-heroicons/solid';
 const DeliveryScreen = () => {
     const navigation = useNavigation();
     const shop = useSelector(selectShop);
-
-
     return (
         <View className="bg-[#ef8700] flex-1">
             <SafeAreaView className="z-50">
@@ -76,21 +74,17 @@ const DeliveryScreen = () => {
 
                     className="h-12 w-12 bg-gray-300 p-4 rounded-full ml-5"
                 />
-
                 <View className="flex-1">
                     <Text className="text-lg">Shamsul Alam</Text>
                     <Text className="text-gray-400">Your Rider</Text>
                 </View>
-
                 <View className="flex-row">
                     <TouchableOpacity>
                         <PhoneIcon size={22} color="#ef8700" />
                         <Text className="text-[#ef8700] text-lg mr-5 font-light">Call</Text>
                     </TouchableOpacity>
                 </View>
-
             </SafeAreaView>
-
         </View>
     )
 }
