@@ -1,5 +1,5 @@
 ## BogaMart
-BogaMart is a Grocery Shopping App for both Android and iOS. 
+BogaMart is a grocery shopping app for both Android and iOS. 
 #### :orange_circle: Screens
 
 Loading Screen             |  Home Screen
